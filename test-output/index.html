@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Diego Zamora\AppData\Local\Temp\testng-eclipse-2146864452\testng-customsuite.xml</span>
+                    <span>C:\Users\Diego Zamora\AppData\Local\Temp\testng-eclipse-2060247146\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,12 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.CheckoutTestCases" hash-for-method="LoggedUserPurchase">LoggedUserPurchase</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="happyPathTestCases.CheckoutTestCases" hash-for-method="LoggedUserPurchase">LoggedUserPurchase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.CheckoutTestCases" hash-for-method="NonLoggedUserPurchase">NonLoggedUserPurchase</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="happyPathTestCases.CheckoutTestCases" hash-for-method="NonLoggedUserPurchase">NonLoggedUserPurchase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,7 +127,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.CheckoutTestCases</span>
+              <span class="class-name">happyPathTestCases.CheckoutTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -149,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Diego Zamora\AppData\Local\Temp\testng-eclipse-2146864452\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Diego Zamora\AppData\Local\Temp\testng-eclipse-2060247146\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -158,7 +158,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.CheckoutTestCases&quot;/&gt;
+      &lt;class name=&quot;happyPathTestCases.CheckoutTestCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -200,18 +200,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NonLoggedUserPurchase')
-data.setCell(0, 2, 'TestCases.CheckoutTestCases')
-data.setCell(0, 3, 7344);
+data.setCell(0, 1, 'LoggedUserPurchase')
+data.setCell(0, 2, 'happyPathTestCases.CheckoutTestCases')
+data.setCell(0, 3, 7512);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoggedUserPurchase')
-data.setCell(1, 2, 'TestCases.CheckoutTestCases')
-data.setCell(1, 3, 7326);
+data.setCell(1, 1, 'NonLoggedUserPurchase')
+data.setCell(1, 2, 'happyPathTestCases.CheckoutTestCases')
+data.setCell(1, 3, 5291);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -237,30 +237,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.CheckoutTestCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">happyPathTestCases.CheckoutTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">NonLoggedUserPurchase</span>
-                <span class="method-start">7940 ms</span>
+                <span class="method-start">8701 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">15290 ms</span>
+                <span class="method-start">13995 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">15357 ms</span>
+                <span class="method-start">14042 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoggedUserPurchase</span>
-                <span class="method-start">22704 ms</span>
+                <span class="method-start">21838 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">30031 ms</span>
+                <span class="method-start">29350 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

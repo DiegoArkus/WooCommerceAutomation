@@ -15,6 +15,7 @@ public class CartPage extends PageObject {
 		super(driver);
 	}
 	
+	//Method to proceed checkout page
 	public void CheckOutButton()
 	{
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", ProceedToCheckout);

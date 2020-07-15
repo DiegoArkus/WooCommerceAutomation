@@ -26,10 +26,9 @@ public class HomePage extends PageObject {
 	}
 	
 	//Method to adding products into the cart
-	public List<WebElement> AddToCartButton()
+	public List<WebElement> AddToCartButton(int product)
 	{
-		
-		addToCart.get(0).click();
+		addToCart.get(product).click();
 		return addToCart;
 	}
 

@@ -18,6 +18,17 @@ import POM.MyAccountPage;
 public class CheckoutTestCases {
 	
 	protected static WebDriver driver;
+	static String User = "diegozamora.ita@hotmail.com";
+	static String Password = "e-commerce_123";
+	static int firstProduct = 0;
+	static int secondProduct = 1;
+	static String firstName = "Alejandro";
+	static String lastName = "Vazquez";
+	static String address = "Rio Tiber 406";
+	static String city = "Aguascalientes";
+	static String postCode = "20010";
+	static String phone = "4498765647";
+	static String email = "alejandro_rivas@hotmail.com";
 
 	@BeforeMethod
 	public static void SetUp()
@@ -35,9 +46,9 @@ public class CheckoutTestCases {
 		POM.CartPage cart = new CartPage(driver);
 		POM.CheckoutPage checkout = new CheckoutPage(driver);
 		
-		home.AddToCartButton();
+		home.AddToCartButton(firstProduct);
 		cart.CheckOutButton();
-		checkout.fillForm();
+		checkout.fillForm(firstName, lastName, address, city, postCode, phone, email);
 		checkout.placeOrderButton();
 		assertTrue(checkout.getSuccessMsg());
 	}
@@ -50,9 +61,9 @@ public class CheckoutTestCases {
 		POM.CheckoutPage checkout = new CheckoutPage(driver);
 		POM.MyAccountPage myaccount = new MyAccountPage(driver);
 		
-		myaccount.LogInSimpleUser();
+		myaccount.LogInSimpleUser(User,Password);
 		home.selectHomeMenu();
-		home.AddToCartButton();
+		home.AddToCartButton(secondProduct);
 		cart.CheckOutButton();
 		checkout.placeOrderButton();
 		assertTrue(checkout.getSuccessMsg());

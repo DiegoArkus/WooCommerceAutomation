@@ -25,15 +25,16 @@ public class CheckoutPage extends PageObject {
 	}
 	
 	//Method to fill Billing required details of a non-logged user
-	public void fillForm()
+	public void fillForm(String FirstName, String LastName, String Address, String City, String PostCode,
+			String Phone, String Email)
 	{
-		firstName.sendKeys("Alejandro");
-		lastName.sendKeys("Gonzalez");
-		address.sendKeys("Rio Tiber 406");
-		city.sendKeys("Aguascalientes");
-		postCode.sendKeys("20010");
-		phone.sendKeys("4491697654");
-		email.sendKeys("alejandro@gmail.com");
+		firstName.sendKeys(FirstName);
+		lastName.sendKeys(LastName);
+		address.sendKeys(Address);
+		city.sendKeys(City);
+		postCode.sendKeys(PostCode);
+		phone.sendKeys(Phone);
+		email.sendKeys(Email);
 	}
 	
 	//Method to complete purchase

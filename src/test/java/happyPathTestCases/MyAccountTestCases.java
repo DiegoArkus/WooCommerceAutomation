@@ -15,6 +15,8 @@ import POM.MyAccountPage;
 public class MyAccountTestCases {
 	
 	protected static WebDriver driver;
+	static String User = "diegozamora.ita@hotmail.com";
+	static String Password = "e-commerce_123";
 	
 	@BeforeMethod
 	public static void SetUp()
@@ -30,7 +32,7 @@ public class MyAccountTestCases {
 	{
 		POM.MyAccountPage myaccount = new MyAccountPage(driver);
 		
-		myaccount.LogInSimpleUser();
+		myaccount.LogInSimpleUser(User,Password);
 		assertTrue(myaccount.getSuccessLogin());
 	}
 	
@@ -39,7 +41,7 @@ public class MyAccountTestCases {
 	{
 		POM.MyAccountPage myaccount = new MyAccountPage(driver);
 		
-		myaccount.LogInSimpleUser();
+		myaccount.LogInSimpleUser(User,Password);
 		myaccount.LogOutSimpleUser();
 		assertTrue(myaccount.getSuccessLogout());
 	}

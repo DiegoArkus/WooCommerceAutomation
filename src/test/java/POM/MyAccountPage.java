@@ -23,11 +23,11 @@ public class MyAccountPage extends PageObject {
 	}
 	
 	//Method to LogIn with a Simple User
-	public void LogInSimpleUser() 
+	public void LogInSimpleUser(String Usr, String Pwd) 
 	{
 		MyAccountMenu.click();
-		UserName.sendKeys("diegozamora.ita@hotmail.com");
-		Password.sendKeys("e-commerce_123");
+		UserName.sendKeys(Usr);
+		Password.sendKeys(Pwd);
 		LogInButton.click();
 	}
 	
