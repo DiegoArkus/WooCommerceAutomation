@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testing WooCommerce" duration-ms="60284" started-at="2020-07-15T02:54:29Z" finished-at="2020-07-15T02:55:29Z">
+    <groups>
+    </groups>
+    <test name="Diego Happy Path" duration-ms="60284" started-at="2020-07-15T02:54:29Z" finished-at="2020-07-15T02:55:29Z">
+      <class name="TestCases.MyAccountTestCases">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:TestCases.MyAccountTestCases@2812cbfa]" name="SetUp" is-config="true" duration-ms="7524" started-at="2020-07-14T19:54:46Z" finished-at="2020-07-14T19:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LogInSimpleUser()[pri:0, instance:TestCases.MyAccountTestCases@2812cbfa]" name="LogInSimpleUser" duration-ms="2865" started-at="2020-07-14T19:54:54Z" finished-at="2020-07-14T19:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogInSimpleUser -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.MyAccountTestCases@2812cbfa]" name="TearDown" is-config="true" duration-ms="4326" started-at="2020-07-14T19:54:57Z" finished-at="2020-07-14T19:55:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:TestCases.MyAccountTestCases@2812cbfa]" name="SetUp" is-config="true" duration-ms="7787" started-at="2020-07-14T19:55:17Z" finished-at="2020-07-14T19:55:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LogOutSimpleUser()[pri:1, instance:TestCases.MyAccountTestCases@2812cbfa]" name="LogOutSimpleUser" duration-ms="3598" started-at="2020-07-14T19:55:25Z" finished-at="2020-07-14T19:55:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutSimpleUser -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.MyAccountTestCases@2812cbfa]" name="TearDown" is-config="true" duration-ms="44" started-at="2020-07-14T19:55:29Z" finished-at="2020-07-14T19:55:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- TestCases.MyAccountTestCases -->
+      <class name="TestCases.CheckoutTestCases">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:TestCases.CheckoutTestCases@2d6e8792]" name="SetUp" is-config="true" duration-ms="8029" started-at="2020-07-14T19:54:29Z" finished-at="2020-07-14T19:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="NonLoggedUserPurchase()[pri:0, instance:TestCases.CheckoutTestCases@2d6e8792]" name="NonLoggedUserPurchase" duration-ms="5504" started-at="2020-07-14T19:54:37Z" finished-at="2020-07-14T19:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NonLoggedUserPurchase -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.CheckoutTestCases@2d6e8792]" name="TearDown" is-config="true" duration-ms="4076" started-at="2020-07-14T19:54:42Z" finished-at="2020-07-14T19:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:TestCases.CheckoutTestCases@2d6e8792]" name="SetUp" is-config="true" duration-ms="7870" started-at="2020-07-14T19:55:01Z" finished-at="2020-07-14T19:55:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LoggedUserPurchase()[pri:1, instance:TestCases.CheckoutTestCases@2d6e8792]" name="LoggedUserPurchase" duration-ms="8556" started-at="2020-07-14T19:55:09Z" finished-at="2020-07-14T19:55:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoggedUserPurchase -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.CheckoutTestCases@2d6e8792]" name="TearDown" is-config="true" duration-ms="81" started-at="2020-07-14T19:55:17Z" finished-at="2020-07-14T19:55:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- TestCases.CheckoutTestCases -->
+    </test> <!-- Diego Happy Path -->
+  </suite> <!-- Testing WooCommerce -->
+</testng-results>

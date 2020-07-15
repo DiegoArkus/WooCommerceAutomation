@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30109" started-at="2020-07-14T19:35:50 PDT" finished-at="2020-07-14T19:36:20 PDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30109" started-at="2020-07-14T19:35:50 PDT" finished-at="2020-07-14T19:36:20 PDT">
+      <class name="TestCases.CheckoutTestCases">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:TestCases.CheckoutTestCases@5a8806ef]" name="SetUp" is-config="true" duration-ms="7939" started-at="2020-07-14T19:35:50 PDT" finished-at="2020-07-14T19:35:58 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="NonLoggedUserPurchase()[pri:0, instance:TestCases.CheckoutTestCases@5a8806ef]" name="NonLoggedUserPurchase" duration-ms="7344" started-at="2020-07-14T19:35:58 PDT" finished-at="2020-07-14T19:36:05 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NonLoggedUserPurchase -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.CheckoutTestCases@5a8806ef]" name="TearDown" is-config="true" duration-ms="65" started-at="2020-07-14T19:36:05 PDT" finished-at="2020-07-14T19:36:05 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:TestCases.CheckoutTestCases@5a8806ef]" name="SetUp" is-config="true" duration-ms="7347" started-at="2020-07-14T19:36:05 PDT" finished-at="2020-07-14T19:36:12 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LoggedUserPurchase()[pri:1, instance:TestCases.CheckoutTestCases@5a8806ef]" name="LoggedUserPurchase" duration-ms="7326" started-at="2020-07-14T19:36:12 PDT" finished-at="2020-07-14T19:36:20 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoggedUserPurchase -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.CheckoutTestCases@5a8806ef]" name="TearDown" is-config="true" duration-ms="59" started-at="2020-07-14T19:36:20 PDT" finished-at="2020-07-14T19:36:20 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- TestCases.CheckoutTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

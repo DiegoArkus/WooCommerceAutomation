@@ -1,0 +1,7 @@
+POM\MyAccountPage.class
+TestCases\CheckoutTestCases.class
+TestCases\MyAccountTestCases.class
+POM\HomePage.class
+POM\CartPage.class
+POM\CheckoutPage.class
+POM\PageObject.class
