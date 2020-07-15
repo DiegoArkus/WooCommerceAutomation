@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing WooCommerce">
+    <test name="Diego Happy Path">
+         <classes>
+             <class name="happyPathTestCases.CheckoutTestCases"/>
+             <class name="happyPathTestCases.MyAccountTestCases"/>
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->
