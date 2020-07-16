@@ -13,7 +13,7 @@ import POM.ShopPage;
 import POM.ProductPage;
 
 public class ShopTestCases {
-	String driverChromePath = "./src/main/resources/Drivers/chromedriver.exe";
+	protected static String driverChromePath = "./src/test/resources/Drivers/chromedriver.exe";
 	String url = "http://itluma.com/";
 	WebDriver driver;
 	HomePage objHome;

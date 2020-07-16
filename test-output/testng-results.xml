@@ -2,36 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29416" started-at="2020-07-15T14:02:20 PDT" finished-at="2020-07-15T14:02:49 PDT">
+  <suite name="Default suite" duration-ms="11468" started-at="2020-07-16T15:48:53 PDT" finished-at="2020-07-16T15:49:04 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29416" started-at="2020-07-15T14:02:20 PDT" finished-at="2020-07-15T14:02:49 PDT">
-      <class name="happyPathTestCases.CheckoutTestCases">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:happyPathTestCases.CheckoutTestCases@5a8806ef]" name="SetUp" is-config="true" duration-ms="8700" started-at="2020-07-15T14:02:20 PDT" finished-at="2020-07-15T14:02:29 PDT">
+    <test name="Default test" duration-ms="11468" started-at="2020-07-16T15:48:53 PDT" finished-at="2020-07-16T15:49:04 PDT">
+      <class name="happyPathTestCases.ShopTestCases">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:happyPathTestCases.ShopTestCases@5a8806ef]" name="Setup" is-config="true" duration-ms="8331" started-at="2020-07-16T15:48:53 PDT" finished-at="2020-07-16T15:49:01 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="NonLoggedUserPurchase()[pri:0, instance:happyPathTestCases.CheckoutTestCases@5a8806ef]" name="NonLoggedUserPurchase" duration-ms="5291" started-at="2020-07-15T14:02:29 PDT" finished-at="2020-07-15T14:02:34 PDT">
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="ProductDetail()[pri:0, instance:happyPathTestCases.ShopTestCases@5a8806ef]" name="ProductDetail" duration-ms="1718" started-at="2020-07-16T15:49:01 PDT" finished-at="2020-07-16T15:49:03 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NonLoggedUserPurchase -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:happyPathTestCases.CheckoutTestCases@5a8806ef]" name="TearDown" is-config="true" duration-ms="45" started-at="2020-07-15T14:02:34 PDT" finished-at="2020-07-15T14:02:34 PDT">
+        </test-method> <!-- ProductDetail -->
+        <test-method status="PASS" signature="shop()[pri:0, instance:happyPathTestCases.ShopTestCases@5a8806ef]" name="shop" duration-ms="725" started-at="2020-07-16T15:49:03 PDT" finished-at="2020-07-16T15:49:04 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:happyPathTestCases.CheckoutTestCases@5a8806ef]" name="SetUp" is-config="true" duration-ms="7796" started-at="2020-07-15T14:02:34 PDT" finished-at="2020-07-15T14:02:42 PDT">
+        </test-method> <!-- shop -->
+        <test-method status="PASS" signature="close()[pri:0, instance:happyPathTestCases.ShopTestCases@5a8806ef]" name="close" is-config="true" duration-ms="651" started-at="2020-07-16T15:49:04 PDT" finished-at="2020-07-16T15:49:04 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="LoggedUserPurchase()[pri:1, instance:happyPathTestCases.CheckoutTestCases@5a8806ef]" name="LoggedUserPurchase" duration-ms="7512" started-at="2020-07-15T14:02:42 PDT" finished-at="2020-07-15T14:02:49 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoggedUserPurchase -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:happyPathTestCases.CheckoutTestCases@5a8806ef]" name="TearDown" is-config="true" duration-ms="46" started-at="2020-07-15T14:02:49 PDT" finished-at="2020-07-15T14:02:49 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- happyPathTestCases.CheckoutTestCases -->
+        </test-method> <!-- close -->
+      </class> <!-- happyPathTestCases.ShopTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

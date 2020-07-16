@@ -12,6 +12,7 @@ import POM.HomePage;
 import POM.SearchPage;
 
 public class SearchTestCases {
+	protected static String driverChromePath = "./src/test/resources/Drivers/chromedriver.exe";
 	String url = "http://itluma.com/";
 	WebDriver driver;
 	HomePage objHome;
@@ -20,6 +21,7 @@ public class SearchTestCases {
 	@BeforeClass
 	
 	public void Setup() {
+		System.setProperty("webdriver.chrome.driver", driverChromePath);
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
@@ -29,25 +31,15 @@ public class SearchTestCases {
 	@Test(priority=0)
 	
 	public void search(){
-		objHome= new homePage(driver);
+		objHome= new HomePage(driver);
 		objHome.clickSearchButton();
 		objHome.searchElement("Blouse");
-		objSearch= new searchPage(driver);
+		objSearch= new SearchPage(driver);
 		//System.out.print(objSearch.returnSearchCount());
 		assertTrue(objSearch.returnSearchCount()>0, "Products not found");
 		
 	}
 	
-   @Test(priority=1)
-	
-	public void searchInvalid(){
-		objHome= new homePage(driver);
-		objHome.clickSearchButton();
-		objHome.searchElement("non existing");
-		objSearch= new searchPage(driver);
-		assertTrue(objSearch.returnSearchCount()==0, "Products not found");
-		
-	}
 	@AfterClass
 	public void close() {
 		driver.close();
