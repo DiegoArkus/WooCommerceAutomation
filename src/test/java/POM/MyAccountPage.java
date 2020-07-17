@@ -10,6 +10,7 @@ public class MyAccountPage extends PageObject {
 	
 	WebDriverWait wait = new WebDriverWait(driver,20);
 	
+	@FindBy (linkText = "DarkShirt") private WebElement DashboardButton;
 	@FindBy (linkText = "My account") private WebElement MyAccountMenu;
 	@FindBy (id = "username") private WebElement UserName;
 	@FindBy (id = "password") private WebElement Password;
@@ -22,8 +23,15 @@ public class MyAccountPage extends PageObject {
 		super(driver);
 	}
 	
+	//This method redirect you into administration dashboard menu
+	public void GoAdminDashboard()
+	{
+		wait.until(ExpectedConditions.elementToBeClickable(DashboardButton));
+		DashboardButton.click();
+	}
+	
 	//Method to LogIn with a Simple User
-	public void LogInSimpleUser(String Usr, String Pwd) 
+	public void LogInUser(String Usr, String Pwd) 
 	{
 		MyAccountMenu.click();
 		UserName.sendKeys(Usr);

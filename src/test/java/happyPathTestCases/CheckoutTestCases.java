@@ -23,13 +23,6 @@ public class CheckoutTestCases {
 	static String Password = "e-commerce_123";
 	static int firstProduct = 0;
 	static int secondProduct = 1;
-	static String firstName = "Alejandro";
-	static String lastName = "Vazquez";
-	static String address = "Rio Tiber 406";
-	static String city = "Aguascalientes";
-	static String postCode = "20010";
-	static String phone = "4498765647";
-	static String email = "alejandro_rivas@hotmail.com";
 
 	@BeforeMethod
 	public static void SetUp()
@@ -50,6 +43,13 @@ public class CheckoutTestCases {
 		
 		home.AddToCartButton(firstProduct);
 		cart.CheckOutButton();
+		String firstName = "Alejandro";
+		String lastName = "Vazquez";
+		String address = "Rio Tiber 406";
+		String city = "Aguascalientes";
+		String postCode = "20010";
+		String phone = "4498765647";
+		String email = "alejandro_rivas@hotmail.com";
 		checkout.fillForm(firstName, lastName, address, city, postCode, phone, email);
 		checkout.placeOrderButton();
 		assertTrue(checkout.getSuccessMsg());
@@ -63,7 +63,7 @@ public class CheckoutTestCases {
 		POM.CheckoutPage checkout = new CheckoutPage(driver);
 		POM.MyAccountPage myaccount = new MyAccountPage(driver);
 		
-		myaccount.LogInSimpleUser(User,Password);
+		myaccount.LogInUser(User,Password);
 		home.selectHomeMenu();
 		home.AddToCartButton(secondProduct);
 		cart.CheckOutButton();

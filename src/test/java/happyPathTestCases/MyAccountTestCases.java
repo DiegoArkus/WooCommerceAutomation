@@ -34,7 +34,7 @@ public class MyAccountTestCases {
 	{
 		POM.MyAccountPage myaccount = new MyAccountPage(driver);
 		
-		myaccount.LogInSimpleUser(User,Password);
+		myaccount.LogInUser(User,Password);
 		assertTrue(myaccount.getSuccessLogin());
 	}
 	
@@ -43,7 +43,7 @@ public class MyAccountTestCases {
 	{
 		POM.MyAccountPage myaccount = new MyAccountPage(driver);
 		
-		myaccount.LogInSimpleUser(User,Password);
+		myaccount.LogInUser(User,Password);
 		myaccount.LogOutSimpleUser();
 		assertTrue(myaccount.getSuccessLogout());
 	}
