@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ShopPage extends PageObject {
-	@FindBy(xpath="//*[@class='ld-sp-img loaded']") List <WebElement> productsList;
+	@FindBy(xpath="//*[@class='ld-sp-img loaded']") private List<WebElement> productsList;
 	WebDriver driver;
 	//By productsList = By.cssSelector("li.product:nth-child(1) > div:nth-child(1)");
 	
@@ -22,12 +22,10 @@ public class ShopPage extends PageObject {
 		
 	}
 //Click product by index	
-	public void clickProduct (int index) {
-		//List <WebElement> products = driver.findElements(productsList);
-		WebDriverWait wait=new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@class='ld-sp-img loaded']")));
+	public List<WebElement> clickProduct (int index) {
 		System.out.print(productsList.size());
 		productsList.get(index).click();
+		return productsList;
 	}
 //Get list of products 
 	@SuppressWarnings("rawtypes")

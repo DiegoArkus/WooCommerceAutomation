@@ -17,6 +17,7 @@ import POM.MyAccountPage;
 
 public class CheckoutTestCases {
 	
+	protected static String driverChromePath = "./src/test/resources/Drivers/chromedriver.exe";
 	protected static WebDriver driver;
 	static String User = "diegozamora.ita@hotmail.com";
 	static String Password = "e-commerce_123";
@@ -33,6 +34,7 @@ public class CheckoutTestCases {
 	@BeforeMethod
 	public static void SetUp()
 	{
+		System.setProperty("webdriver.chrome.driver", driverChromePath);
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
