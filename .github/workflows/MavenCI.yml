@@ -21,7 +21,7 @@ jobs:
         chromedriver-version: '77.0.3865.40'
     - name: Build with Maven
     - run: mvn -B package --file pom.xml
-    - run: export DISPLAY=:99
-    - run: chromedriver --url-base=/wd/hub
+			export DISPLAY=:99
+   			chromedriver --url-base=/wd/hub
     
     
