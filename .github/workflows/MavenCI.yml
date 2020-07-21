@@ -21,7 +21,8 @@ jobs:
         chromedriver-version: '77.0.3865.40'
     - name: Build with Maven
     - run: mvn -B package --file pom.xml
-			export DISPLAY=:99
-   			chromedriver --url-base=/wd/hub
-    
+	- run: |
+    	export DISPLAY=:99
+    	chromedriver --url-base=/wd/hub &
+    	sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
     
